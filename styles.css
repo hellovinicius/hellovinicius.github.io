@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;800&display=swap');
+
+:root {
+  --primary-dark: #000000;
+}
+
+body {
+  background-color: var(--primary-dark);
+  background-image: url('./assets/line.svg');
+  background-repeat: no-repeat;
+  background-position-x: 30vw;
+  background-size: contain;
+
+  font-family: 'Outfit', sans-serif;
+
+  margin: 0;
+}
+
+/* Specific styling */
+#welcome {
+  margin-top: 50vh;
+}
+
+#aboutme {
+  display: flex;
+  align-items: center;
+}
+
+#aboutme img {
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+#getintouch {
+  width: 100%;
+
+  padding: 20px 0 20px 0;
+
+  background-image: url('./assets/glitch.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button {
+  height: fit-content;
+
+  padding: 10px 20px;
+  margin: 10px 0 10px 0;
+
+  background-color: #000000;
+
+  border-radius: 100px;
+
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #7423ff;
+}
+
+/* Utilities */
+.padding {
+  max-width: 1000px;
+
+  padding: 20px;
+
+  margin: 0 auto;
+}
+
+.list {
+  display: flex;
+}
+
+.list a {
+  margin-right: 20px;
+  font-size: 3rem;
+  color: #595959;
+}
+
+.list a:hover {
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.title {
+  color: #fafafa;
+
+  font-size: 3rem;
+
+  margin: 0;
+}
+
+.text {
+  color: #cacaca;
+  font-size: 1.4rem;
+  margin: 10px 0px 10px 0;
+}
+
+.detail {
+  color: #fafafa;
+}
+
+.text--emphasis {
+  font-weight: bold;
+  color: #fafafa;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.spacer {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  #aboutme,
+  .space-between,
+  .align-center {
+    flex-wrap: wrap;
+  }
+
+  #getintouch {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #aboutme img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+}
